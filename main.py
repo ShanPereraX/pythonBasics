@@ -1,3 +1,22 @@
+# arithmatic operators in precedence
+#     ()            parenthesis
+#     **            exponent
+#     * / // %      multiplication, division, flow division, module
+#     + -           addition, subtraction
+# ---------------------------------------------------------------------------------------------------------------------
+# variables and data types
+# integers  -> int      -> whole numbers                            -> 1, 100, 12
+# float     -> float    -> numbers with decimal points              -> 1.57, 2.0
+# string    -> str      -> ordered sequence of characters           -> "Lakshan", "Hi"
+# complex   ->          -> complex numbers                          -> 3+5j
+# boolean   -> bool     -> logical values indicating True False     -> True, False
+#
+# tuples    -> tup      -> ordered immutable sequence of objects    -> (10,"hello", 200.3)
+# list      -> list     -> ordered sequence of objects              -> [10,"hello", 200.3]
+# sets      -> set      -> unordered collection of unique objects   -> ("a","b")
+# dictionaries -> dict  -> unordered key:value pairs                -> ("myKey":"value", "myKey2":"value 2")
+# ---------------------------------------------------------------------------------------------------------------------
+#
 # name = "123"
 # print(len(name))  # length()
 # print("Character index: " + str(name.find("S"))) #index
@@ -5,10 +24,9 @@
 # print(name.upper()) #all UPPER
 # print(name.lower()) #all lower
 # print(name.isdigit())  # check str is a digit
-import math
+# import math
 
-# ------------------------------------------------------------------
-
+# ---------------------------------------------------------------------------------------------------------------------
 # Type casting : data type of value -> another data type
 #
 # x = 5
@@ -29,8 +47,7 @@ import math
 #
 # print(type(y))
 # print(type(z))
-
-# -----------------------------------------------------------------
+# --------------------------------------------------------------------------------------------------------------------
 # Key board input -> input()
 #
 # name = input("What is your name ? : ")
@@ -42,7 +59,7 @@ import math
 # height = float(input("How tall are you ? : "))  # casting string -> float
 # print("You are "+str(height)+"cm tall")
 
-# -----------------------------------------------------------------
+# --------------------------------------------------------------------------------------------------------------------
 # math functions
 #
 # pi = 3.14
@@ -59,8 +76,8 @@ import math
 #
 # print("max : " + str(max(x, y, z)))  # max
 # print("min : " + str(min(x, y, z)))  # min
-
-# -----------------------------------------------------------------
+#
+# --------------------------------------------------------------------------------------------------------------------
 # Slicing = create substring by extracting elements from another string
 #           indexing[] or slice()
 #           [start:stop:step]
@@ -88,19 +105,40 @@ import math
 # website = "https://google.com"
 # slice = slice(7,-1)
 # print(website[slice])
-# -------------------------------------------------------------------------
 
-
+# ---------------------------------------------------------------------------------------------------------------------
 
 # conditional statements
 # if statement = a block of code that will execute if it's condition is true
+#
+# age = int(input("input your age : "))
+# if age == 100:
+#     print("You are a century old ! ")
+# elif age >= 18:
+#     print("You are an adult ! ")
+# elif age <= 0:
+#     print("you haven't been born yet!")
+# else:
+#     print("You are a child ")
+#
+# ---------------------------------------------------------------------------------------------------------------------
 
-age = int(input("input your age : "))
-if age == 100:
-    print("You are a century old ! ")
-elif age >= 18:
-    print("You are an adult ! ")
-elif age <= 0:
-    print("you haven't been born yet!")
-else:
-    print("You are a child ")
+# logical operators (and, or, not) -> used to check if two or more conditional statements
+# temp = int(input("Input temperature : "))
+# if not (temp >= 0 and temp <= 30):                      # !true or !false
+#     print("Temperature is bad today. stay inside!")
+# elif temp > 0 or temp < 30:                             # true or false
+#     print("Temperature is good today. go outside!")
+
+# ---------------------------------------------------------------------------------------------------------------------
+
+# while loop -> a statement that will execute its block of codes as long as it's condition remains true
+# 1)    num = 0
+#       while (num != 5):
+#       print(num)
+#       num = num + 1
+#
+#2)     name = ""
+#       while len(name) < 4:
+#       name = input("Enter name: ")
+#       print("hi!"+name)
